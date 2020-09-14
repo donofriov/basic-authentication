@@ -11,6 +11,7 @@ const protectedRoute = (Comp, route = '/profile') => (props) => {
     }
     useEffect(() => {
         checkAuthState()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return <Comp {...props} />
 }
